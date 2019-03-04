@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{68D61217-AB0D-49CC-85CE-A06376DDF45E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapping", "Mapping\Mapping.csproj", "{8A02C237-790B-4020-A450-CE23C8BA3D21}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{68D61217-AB0D-49CC-85CE-A06376DDF45E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68D61217-AB0D-49CC-85CE-A06376DDF45E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68D61217-AB0D-49CC-85CE-A06376DDF45E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8A02C237-790B-4020-A450-CE23C8BA3D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8A02C237-790B-4020-A450-CE23C8BA3D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8A02C237-790B-4020-A450-CE23C8BA3D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8A02C237-790B-4020-A450-CE23C8BA3D21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
