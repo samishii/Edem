@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{68D61217-AB0D-49CC-85CE-A06376DDF45E}</ProjectGuid>
+    <ProjectGuid>{F9C9743A-F821-4ECF-B328-AC4BF7D8D1BE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Core</RootNamespace>
-    <AssemblyName>Core</AssemblyName>
+    <RootNamespace>Edem</RootNamespace>
+    <AssemblyName>Edem</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,16 +34,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BasicFormatsForCore">
-      <HintPath>..\..\..\..\..\Desktop\FiddlerCoreAPI\BasicFormatsForCore.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\GitHub\Edem\vendor\FiddlerCoreAPI\BasicFormatsForCore.dll</HintPath>
     </Reference>
     <Reference Include="BCMakeCert">
-      <HintPath>..\..\..\..\..\Desktop\FiddlerCoreAPI\BCMakeCert.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\GitHub\Edem\vendor\FiddlerCoreAPI\BCMakeCert.dll</HintPath>
     </Reference>
     <Reference Include="CertMaker">
-      <HintPath>..\..\..\..\..\Desktop\FiddlerCoreAPI\CertMaker.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\GitHub\Edem\vendor\FiddlerCoreAPI\CertMaker.dll</HintPath>
     </Reference>
     <Reference Include="FiddlerCore45">
-      <HintPath>..\..\..\..\..\Desktop\FiddlerCoreAPI\FiddlerCore45.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\GitHub\Edem\vendor\FiddlerCoreAPI\FiddlerCore45.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -57,24 +57,32 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Telerik.NetworkConnections">
-      <HintPath>..\..\..\..\..\Desktop\FiddlerCoreAPI\Telerik.NetworkConnections.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\GitHub\Edem\vendor\FiddlerCoreAPI\Telerik.NetworkConnections.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.NetworkConnections.Windows">
-      <HintPath>..\..\..\..\..\Desktop\FiddlerCoreAPI\Telerik.NetworkConnections.Windows.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\GitHub\Edem\vendor\FiddlerCoreAPI\Telerik.NetworkConnections.Windows.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FiddlerCore.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Misc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc.Designer.cs">
+      <DependentUpon>Misc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc.resx">
+      <DependentUpon>Misc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -116,6 +125,18 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Refresh_132740.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Magic_wand_132788.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Retort_132739.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Boss_132688.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

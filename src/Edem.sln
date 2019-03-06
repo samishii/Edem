@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{68D61217-AB0D-49CC-85CE-A06376DDF45E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edem", "Edem\Edem.csproj", "{F9C9743A-F821-4ECF-B328-AC4BF7D8D1BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{68D61217-AB0D-49CC-85CE-A06376DDF45E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68D61217-AB0D-49CC-85CE-A06376DDF45E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68D61217-AB0D-49CC-85CE-A06376DDF45E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68D61217-AB0D-49CC-85CE-A06376DDF45E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9C9743A-F821-4ECF-B328-AC4BF7D8D1BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9C9743A-F821-4ECF-B328-AC4BF7D8D1BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9C9743A-F821-4ECF-B328-AC4BF7D8D1BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9C9743A-F821-4ECF-B328-AC4BF7D8D1BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2FC2EBB5-CFFA-4E32-BC63-B7E975EEF55A}
+		SolutionGuid = {9166F2DA-B915-4A25-84CA-EC60BD8F515F}
 	EndGlobalSection
 EndGlobal
