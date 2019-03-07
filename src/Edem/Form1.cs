@@ -65,9 +65,10 @@ namespace Edem
             misc.Show();
         }
 
-        private void itemsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CharacterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Character character = new Character();
+            character.Show();
         }
     }
 
@@ -81,7 +82,7 @@ namespace Edem
             {
                 if (session.uriContains("omega277.swf"))
                 {
-                    session.oFlags["x-replywithfile"] = Path.GetFullPath(session.url.Replace("epicduelstage.artix.com/", "C:\\Users\\Samishii\\Desktop\\"));
+                    session.oFlags["x-replywithfile"] = Path.GetFullPath(session.url.Replace("epicduelstage.artix.com/", "C:\\Users\\Public\\"));
                     FiddlerApplication.Shutdown();
                 }
             };

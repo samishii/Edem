@@ -20,36 +20,37 @@ namespace Edem
         
         public void CharacterCreatorModule(int flags, int value)
         {
-            BinaryWriter bw = new BinaryWriter(File.OpenWrite("C:\\Users\\Samishii\\Desktop\\omega277.swf")); // temp, switch to %appdata% 
+            
+            BinaryWriter bw = new BinaryWriter(File.OpenWrite("C:\\Users\\Public\\omega277.swf")); // temp, switch to %appdata% 
             switch (flags)
             {
                 case 1:
-                    bw.Seek(0xA0C061, SeekOrigin.Begin);
+                    bw.Seek(0xA0C21D, SeekOrigin.Begin);
                     bw.Write((byte)value);
                     bw.Dispose();
                     break;
                 case 2:
-                    bw.Seek(0xA0C067, SeekOrigin.Begin);
+                    bw.Seek(0xA0C224, SeekOrigin.Begin);
                     bw.Write((byte)value);
                     bw.Dispose();
                     break;
                 case 3:
-                    bw.Seek(0xA0C06D, SeekOrigin.Begin);
+                    bw.Seek(0xA0C22B, SeekOrigin.Begin);
                     bw.Write((byte)value);
                     bw.Dispose();
                     break;
                 case 4:
-                    bw.Seek(0xA0C073, SeekOrigin.Begin);
+                    bw.Seek(0xA0C232, SeekOrigin.Begin);
                     bw.Write((byte)value);
                     bw.Dispose();
                     break;
                 case 5:
-                    bw.Seek(0xA0C079, SeekOrigin.Begin);
+                    bw.Seek(0xA0C239, SeekOrigin.Begin);
                     bw.Write((byte)value);
                     bw.Dispose();
                     break;
                 case 6:
-                    bw.Seek(0xA0C07F, SeekOrigin.Begin);
+                    bw.Seek(0xA0C240, SeekOrigin.Begin);
                     bw.Write((byte)value);
                     bw.Dispose();
                     break;
@@ -60,6 +61,32 @@ namespace Edem
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             CharacterCreatorModule(1, Convert.ToInt32(Math.Round(numericUpDown1.Value, 0)));
+        }
+
+        private void Misc_Load(object sender, EventArgs e)
+        {
+            using (FileStream fileStream = new FileStream("C:\\Users\\Public\\omega277.swf", FileMode.Open))
+            {
+                fileStream.Seek(0xA0C21D, SeekOrigin.Begin);
+                numericUpDown1.Value = fileStream.ReadByte();
+
+                fileStream.Seek(0xA0C224, SeekOrigin.Begin);
+                numericUpDown1.Value = fileStream.ReadByte();
+
+                fileStream.Seek(0xA0C22B, SeekOrigin.Begin);
+                numericUpDown1.Value = fileStream.ReadByte();
+
+                fileStream.Seek(0xA0C232, SeekOrigin.Begin);
+                numericUpDown1.Value = fileStream.ReadByte();
+
+                fileStream.Seek(0xA0C239, SeekOrigin.Begin);
+                numericUpDown1.Value = fileStream.ReadByte();
+
+                fileStream.Seek(0xA0C240, SeekOrigin.Begin);
+                numericUpDown1.Value = fileStream.ReadByte();
+
+                fileStream.Close();
+            }
         }
     }
 }

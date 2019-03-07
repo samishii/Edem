@@ -34,7 +34,7 @@ namespace Edem
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.applyChangesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.itemsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CharacterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miscToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -44,37 +44,37 @@ namespace Edem
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.applyChangesToolStripMenuItem,
             this.toolStripSeparator1,
-            this.itemsToolStripMenuItem,
+            this.CharacterToolStripMenuItem,
             this.miscToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 98);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 76);
             // 
             // applyChangesToolStripMenuItem
             // 
             this.applyChangesToolStripMenuItem.Image = global::Edem.Properties.Resources.iconfinder_Refresh_132740;
             this.applyChangesToolStripMenuItem.Name = "applyChangesToolStripMenuItem";
-            this.applyChangesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.applyChangesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.applyChangesToolStripMenuItem.Text = "Apply changes";
             this.applyChangesToolStripMenuItem.Click += new System.EventHandler(this.applyChangesToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
-            // itemsToolStripMenuItem
+            // CharacterToolStripMenuItem
             // 
-            this.itemsToolStripMenuItem.Image = global::Edem.Properties.Resources.iconfinder_Boss_132688;
-            this.itemsToolStripMenuItem.Name = "itemsToolStripMenuItem";
-            this.itemsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.itemsToolStripMenuItem.Text = "Character";
-            this.itemsToolStripMenuItem.Click += new System.EventHandler(this.itemsToolStripMenuItem_Click);
+            this.CharacterToolStripMenuItem.Image = global::Edem.Properties.Resources.iconfinder_Boss_132688;
+            this.CharacterToolStripMenuItem.Name = "CharacterToolStripMenuItem";
+            this.CharacterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.CharacterToolStripMenuItem.Text = "Character";
+            this.CharacterToolStripMenuItem.Click += new System.EventHandler(this.CharacterToolStripMenuItem_Click);
             // 
             // miscToolStripMenuItem
             // 
             this.miscToolStripMenuItem.Image = global::Edem.Properties.Resources.iconfinder_Retort_132739;
             this.miscToolStripMenuItem.Name = "miscToolStripMenuItem";
-            this.miscToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.miscToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.miscToolStripMenuItem.Text = "Misc";
             this.miscToolStripMenuItem.Click += new System.EventHandler(this.miscToolStripMenuItem_Click);
             // 
@@ -82,7 +82,7 @@ namespace Edem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(894, 600);
+            this.ClientSize = new System.Drawing.Size(899, 600);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
@@ -98,7 +98,7 @@ namespace Edem
         private ContextMenuStrip contextMenuStrip1;
         private ToolStripMenuItem applyChangesToolStripMenuItem;
         private ToolStripSeparator toolStripSeparator1;
-        private ToolStripMenuItem itemsToolStripMenuItem;
+        private ToolStripMenuItem CharacterToolStripMenuItem;
         private ToolStripMenuItem miscToolStripMenuItem;
         #endregion
 
