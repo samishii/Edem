@@ -80,7 +80,7 @@ namespace Edem
             FiddlerApplication.Startup(0, FiddlerCoreStartupFlags.Default);
             FiddlerApplication.BeforeRequest += delegate (Session session)
             {
-                if (session.uriContains("omega277.swf"))
+                if (session.uriContains("omega284.swf"))
                 {
                     session.oFlags["x-replywithfile"] = Path.GetFullPath(session.url.Replace("epicduelstage.artix.com/", "C:\\Users\\Public\\"));
                     FiddlerApplication.Shutdown();
